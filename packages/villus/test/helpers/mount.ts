@@ -5,16 +5,16 @@ export function mount(component: Record<string, any>) {
   app.config.warnHandler = () => {
     // Do nothing
   };
-  app.config.errorHandler = err => {
+  app.config.errorHandler = (err: Error) => {
     if ((err as Error).message === 'data is not defined') {
       return;
     }
 
-    if (/Cannot detect villus Client/.test((err as Error).message)) {
+    if (/Cannot detect villus Client/.test(err.message)) {
       return;
     }
 
-    if (/No subscription forwarder was set/.test((err as Error).message)) {
+    if (/No subscription forwarder was set/.test(err.message)) {
       return;
     }
 

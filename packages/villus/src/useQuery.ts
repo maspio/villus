@@ -1,4 +1,4 @@
-import { isReactive, isRef, onMounted, Ref, ref, unref, watch } from 'vue';
+import { isReactive, isRef, onMounted, Ref, ref, unref, watch } from '@nuxtjs/composition-api';
 import stringify from 'fast-json-stable-stringify';
 import { CachePolicy, MaybeRef, OperationResult, QueryExecutionContext, QueryVariables } from './types';
 import { hash, CombinedError, toWatchableSource, injectWithSelf } from './utils';

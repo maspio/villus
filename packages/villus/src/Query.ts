@@ -1,4 +1,4 @@
-import { defineComponent, Ref, toRef, watch } from 'vue';
+import { defineComponent, Ref, toRef, watch } from '@nuxtjs/composition-api';
 import { CachePolicy } from './types';
 import { useQuery, BaseQueryApi } from './useQuery';
 import { normalizeChildren } from './utils';

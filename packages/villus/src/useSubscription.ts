@@ -1,4 +1,4 @@
-import { ref, Ref, onMounted, unref, onBeforeUnmount, watch, isRef } from 'vue';
+import { ref, Ref, onMounted, unref, onBeforeUnmount, watch, isRef } from '@nuxtjs/composition-api';
 import { VILLUS_CLIENT } from './symbols';
 import { Unsubscribable, OperationResult, QueryVariables, MaybeRef, StandardOperationResult } from './types';
 import { CombinedError, injectWithSelf } from './utils';

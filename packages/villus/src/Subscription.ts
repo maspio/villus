@@ -1,4 +1,4 @@
-import { defineComponent, toRef, watch } from 'vue';
+import { defineComponent, toRef, watch } from '@nuxtjs/composition-api';
 import { normalizeChildren } from './utils';
 import { useSubscription, defaultReducer, Reducer } from './useSubscription';
 

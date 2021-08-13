@@ -1,4 +1,4 @@
-import { ref, Ref, unref } from 'vue';
+import { ref, Ref, unref } from '@nuxtjs/composition-api';
 import { MaybeRef, OperationResult, QueryExecutionContext, QueryVariables } from './types';
 import { CombinedError, injectWithSelf } from './utils';
 import { VILLUS_CLIENT } from './symbols';

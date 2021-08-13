@@ -1,5 +1,5 @@
 {
-  "name": "villus",
+  "name": "@villus/nuxt",
   "version": "1.0.0-rc.20",
   "description": "A small and fast GraphQL client for Vue.js",
   "module": "dist/villus.esm.js",
@@ -14,6 +14,7 @@
   ],
   "peerDependencies": {
     "graphql": "^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0",
-    "vue": "^3.0.0"
+    "vue": "^2.6.14",
+    "@nuxtjs/composition-api": "^0.26.0"
   }
 }

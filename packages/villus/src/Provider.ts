@@ -1,4 +1,4 @@
-import { defineComponent, h, SetupContext } from 'vue';
+import { defineComponent, h, SetupContext } from '@nuxtjs/composition-api';
 import { normalizeChildren } from './utils';
 import { useClient } from './useClient';
 import { CachePolicy, ClientPlugin } from './types';
@@ -40,7 +40,8 @@ export function withProvider(component: any, clientOpts: ClientOptions) {
       useClient(clientOpts);
 
       return () => {
-        return h(component, { ...props, ...ctx.attrs }, ctx.slots);
+        throw new Error(`working nuxt version not implemented yet`);
+        // return h(component, { ...props, ...ctx.attrs }, ctx.slots);
       };
     },
   });

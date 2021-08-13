@@ -1,4 +1,4 @@
-import { Ref } from 'vue';
+import { Ref } from '@nuxtjs/composition-api';
 import type { ExecutionResult } from 'graphql';
 import { CombinedError } from './utils/error';
 import { ParsedResponse, FetchOptions, Operation } from '../../shared/src';

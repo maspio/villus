@@ -1,4 +1,13 @@
-import { getCurrentInstance, inject, InjectionKey, isReactive, isRef, Ref, toRefs, WatchSource } from 'vue';
+import {
+  getCurrentInstance,
+  inject,
+  InjectionKey,
+  isReactive,
+  isRef,
+  Ref,
+  toRefs,
+  WatchSource,
+} from '@nuxtjs/composition-api';
 
 export function toWatchableSource<T = any>(value: Ref<T> | Record<string, any>): WatchSource | WatchSource[] {
   if (isRef(value)) {

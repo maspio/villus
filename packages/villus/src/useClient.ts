@@ -1,4 +1,4 @@
-import { provide } from 'vue';
+import { provide } from '@nuxtjs/composition-api';
 import { createClient, ClientOptions } from './client';
 import { VILLUS_CLIENT } from './symbols';
 

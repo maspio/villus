@@ -17,7 +17,7 @@ import {
   QueryExecutionContext,
 } from './types';
 import { VILLUS_CLIENT } from './symbols';
-import { App } from 'vue';
+import { App, provide } from '@nuxtjs/composition-api';
 
 export interface ClientOptions {
   url: string;
@@ -150,8 +150,13 @@ export class Client {
   }
 }
 
+/**
+ * nuxt-composition-api does not support App.provide.
+ * How to use nuxt plugins for similar effect.
+ * https://composition-api.nuxtjs.org/lifecycle/onGlobalSetup
+ */
 export function createClient(opts: ClientOptions) {
   const client = new Client(opts);
-  client.install = (app: App) => app.provide(VILLUS_CLIENT, client);
+  client.install = () => provide(VILLUS_CLIENT, client);
   return client;
 }
